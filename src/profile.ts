@@ -73,15 +73,15 @@ export const profile = {
       period: "2021–present",
       company: "Kubikos GmbH",
       role: "Founder & CEO",
-      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Also developed EG Energiemanager app for WebTec (renewable energy communities). Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
-      tags: ["Patent Holder", "Firmware", "Flutter", "AWS", "IoT", "Product Strategy", "FFG Funded"],
+      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; training plan generator (Claude Opus); exercise research tool extracting technique, pros/cons, and muscle data to auto-populate exercise database — all fully integrated into the platform. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Also developed EG Energiemanager app for WebTec (renewable energy communities). Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
+      tags: ["Patent Holder", "Firmware", "Flutter", "AWS", "IoT", "Claude Opus", "Gemini", "Veo3", "FFG Funded"],
     },
     {
       period: "2018–present",
       company: "Sport Performance Systems e.U.",
       role: "Owner & Freelance Software Engineer",
-      description: "Independent consultancy specialising in complex, cross-disciplinary systems. Long-term client GMS-Salzburg: building and deploying healthcare IT (VagusApp, Vagus Quest), hotel management (Felix, Check-In App), and hospitality software across dozens of DACH locations including Lanserhof Sylt, Eltern-Kind-Kliniken, Eurotherme, and many more. Full lifecycle from development through on-site installation, training, and ongoing support. Built custom MCP servers and AI automation tooling for the team. Presented VagusApp and Yuna (AI clinic robot) at Reha-Kolloquium 2026 Leipzig. AI tooling champion internally — driving adoption of Claude, Cursor, MCP servers, and n8n automation.",
-      tags: ["Flutter", "HL7", "AWS", "Firebird DB", "MCP Servers", "AI Tooling", "Customer Success"],
+      description: "Independent consultancy. Long-term client GMS-Salzburg: customer success and engineering for Vagus (patient-facing app for rehabilitation clinics, HL7 ADT/SIU interfaces, RAG-based FAQ chatbot, deployed across dozens of DACH facilities). Partial team lead on Unity — a next-generation platform unifying hotel management (Felix), medical clinic management (Topas), and patient applications (Vagus) into a single architecture. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows. Built custom MCP servers (Redmine MCP in Python). AI tooling champion internally — driving adoption of Claude, Cursor, MCP servers, n8n automation, and GitHub Copilot Spaces.",
+      tags: ["LLM Routing", "MCP Servers", "HL7", "AWS Bedrock", "RAG", "Ruby on Rails", "AI Tooling", "Customer Success"],
     },
     {
       period: "2017–2021",
@@ -128,22 +128,16 @@ export const profile = {
       tags: ["Flutter", "Modbus TCP", "PV Systems", "EEG API", "ML Nowcasting"],
     },
     {
-      name: "Check-In App — Digital Hotel & Clinic Check-In",
+      name: "Vagus — Patient App & Clinic Interfaces",
       type: "Freelance (GMS-Salzburg)",
-      description: "Digital guest check-in system deployed at dozens of hotels and clinics across DACH: Lanserhof Sylt, Hotel Sallerhof, ÖBB Bildungshaus Wien, Mörwald Betriebe, and many more. Features passport/ID scanning, Austrian Meldewesen integration, group check-in, companion handling, and multilingual UI. Full lifecycle including installation, training, and ongoing support.",
-      tags: ["Flutter", "Firebird DB", "Passport Scanning", "Meldewesen", "Multi-language"],
+      description: "Patient-facing mobile app for rehabilitation clinics across Germany. Customer success and interface engineering: HL7 ADT/SIU integration with hospital information systems, Vagus Connector (Delphi/Samba), questionnaire system (Vagus Quest), alarm chains, RAG-based FAQ chatbot, and on-site deployment at dozens of DACH facilities. Full lifecycle from development through installation, training, and ongoing support.",
+      tags: ["HL7 ADT/SIU", "Firebird", "AWS Amplify", "Delphi", "RAG", "Mixpanel"],
     },
     {
-      name: "Vagus Quest — Rehabilitation Clinics",
+      name: "Unity — Unified Healthcare & Hospitality Platform",
       type: "Freelance (GMS-Salzburg)",
-      description: "Digital questionnaire and document management system for rehabilitation clinics across Germany. Deployed at Klinik am See, Sonnenhof, Zauberwald, ETI, and Eltern-Kind-Kliniken (Nordsee, Ostsee, Sylt, and more). Deep HL7 ADT/SIU integration with hospital information systems, Vagus Connector (Delphi, Samba shares), alarm chains, RAG-based FAQ chatbot. Presented at Reha-Kolloquium 2026 Leipzig alongside Yuna AI clinic robot.",
-      tags: ["Flutter", "HL7 ADT/SIU", "Firebird", "AWS Amplify", "Delphi", "RAG", "Mixpanel"],
-    },
-    {
-      name: "Felix — Hotel Management System",
-      type: "Freelance (GMS-Salzburg)",
-      description: "Comprehensive hotel and hospitality management system with Firebird database backend. Guest management, check-in/check-out logic, parent-child clinic structures, appointment scheduling via HL7, Loxone smart-home integration (room status/reset), Salto door access control (UDP), and Seekda channel manager interfaces.",
-      tags: ["AWS Amplify", "Firebird DB", "HL7", "Ruby on Rails", "Loxone", "Salto UDP"],
+      description: "Next-generation platform unifying multiple applications: Felix (hotel management), Topas (medical/clinic management), and Vagus (patient app) into a single architecture. Partial team lead. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows.",
+      tags: ["LLM Routing", "AWS Bedrock", "TypeScript", "MCP Servers", "n8n", "Ruby on Rails"],
     },
   ],
 
@@ -174,9 +168,9 @@ export const profile = {
       context: "Smart home automation, PV system integration, energy community management with real-time monitoring.",
     },
     ai: {
-      title: "AI & Analytics",
-      items: ["Claude API", "MCP Servers", "AWS Bedrock", "Google Gemini", "RAG", "n8n", "Mixpanel", "Sentry"],
-      context: "Built MCP servers (Redmine MCP in Python, this profile MCP in TypeScript). RAG-based FAQ automation. ML-based PV nowcasting. LLM gateway architecture. Active Claude Code and Cursor user since 2024.",
+      title: "AI & Generative AI",
+      items: ["Claude API", "Claude Opus", "MCP Servers", "AWS Bedrock", "Google Gemini", "Veo3", "RAG", "n8n", "LLM Gateway Routing"],
+      context: "Built and published MCP servers (Redmine MCP in Python, this profile MCP in TypeScript on npm). LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). Training plan generator (Claude Opus). Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
     },
     industrial: {
       title: "Industrial Automation",
@@ -244,45 +238,100 @@ export const profile = {
   },
 
   whyAnthropic: {
-    targetRole: "Forward Deployed Engineer, Applied AI",
-    fitSummary: "Thomas brings a rare combination for the German-speaking FDE role: technical founder who has built and shipped end-to-end products (hardware to cloud), deep customer-facing deployment experience across DACH, and hands-on MCP/Claude ecosystem experience — including building this very MCP server.",
-    requirementMapping: [
+    targetRoles: [
       {
-        requirement: "Native or C1 German speaker with fluent English",
-        fit: "German native speaker, English C2, plus Russian B2. One of the strongest filters — most FDE candidates worldwide don't qualify. Thomas does.",
+        role: "Forward Deployed Engineer, Applied AI",
+        fitSummary: "Thomas brings a rare combination: technical founder who has built and shipped end-to-end products (hardware to cloud), deep customer-facing deployment experience across DACH, and hands-on MCP/Claude ecosystem experience — including building this very MCP server and production AI pipelines with Claude Opus, Gemini, and Veo3.",
+        requirementMapping: [
+          {
+            requirement: "3-4+ years in a technical, customer-facing role or former technical founder",
+            fit: "5+ years as technical founder (Kubikos) AND freelance engineer deploying software at dozens of DACH customer sites. 'Former technical founder' describes Thomas perfectly. Before that: 3.5 years leading engineering teams at BEKO, 10 years at Siconnex with global technical sales.",
+          },
+          {
+            requirement: "Production experience with LLMs, prompt engineering, agent development",
+            fit: "Built production AI pipelines: exercise creator (Gemini + Veo3), training plan generator (Claude Opus), exercise research tool, RAG-based FAQ chatbot. Designed LLM gateway architecture with deterministic routing (AWS Bedrock, multi-provider). Built and published MCP servers. AI tooling champion at GMS.",
+          },
+          {
+            requirement: "Strong programming skills, Python + ideally TypeScript/Java",
+            fit: "Ships production code daily in TypeScript, Dart/Flutter, Python, C/C++, Java, Ruby. 3 published apps on App Store & Google Play. Full IoT stack from firmware to cloud.",
+          },
+          {
+            requirement: "Build production applications with Claude, deliver MCP servers, sub-agents, agent skills",
+            fit: "Published MCP server on npm (thomas-klaushofer-mcp). Built Redmine MCP in Python. Drove company MCP monorepo at GMS. Training plan generator built on Claude Opus. This MCP server itself demonstrates the skill.",
+          },
+          {
+            requirement: "Navigate ambiguity, high cooperation mindset",
+            fit: "Simultaneously manages own startup products and deploys software for GMS across complex healthcare and hospitality organisations — each with unique IT landscapes and integration requirements.",
+          },
+          {
+            requirement: "25% travel to customer sites",
+            fit: "Already travels regularly for on-site installations across DACH. 25% travel is ideal.",
+          },
+          {
+            requirement: "Preferred: healthcare, enterprise verticals",
+            fit: "Deep healthcare IT experience: HL7 ADT/SIU integration, rehabilitation clinic deployments, hospital information systems. Also hotel/hospitality enterprise systems.",
+          },
+        ],
       },
       {
-        requirement: "4+ years in a technical, customer-facing role (FDE, Software Engineer with consulting experience, or former technical founder)",
-        fit: "5+ years as technical founder (Kubikos) AND freelance engineer deploying software at dozens of DACH customer sites. 'Former technical founder' describes Thomas perfectly. Before that: 3.5 years leading engineering teams at BEKO, 10 years at Siconnex with global technical sales.",
+        role: "Solutions Architect, Applied AI (Beneficial Deployments)",
+        fitSummary: "Thomas's healthcare deployment background (rehabilitation clinics, patient apps) and teaching experience (WIFI Salzburg since 2013) map directly to this mission-driven, education/healthcare-focused SA role. His MCP server and Claude Code expertise enable the 'Claude Code enablement' responsibility.",
+        requirementMapping: [
+          {
+            requirement: "3+ years in a technical role, ideally customer-facing",
+            fit: "5+ years customer-facing: founding Kubikos (founder-led sales) and freelance deployments across dozens of DACH healthcare and hospitality facilities.",
+          },
+          {
+            requirement: "Experience working in or building trust with education, healthcare, scientific research, nonprofit, or mission-driven organizations",
+            fit: "Deep healthcare: Vagus patient app deployed at rehabilitation clinics across Germany, HL7 hospital system integration, on-site training. Teaching: WIFI Salzburg trainer since 2013. Scientific: 99% sensor accuracy validated with Paris Lodron University.",
+          },
+          {
+            requirement: "Familiarity with LLM implementation patterns, prompt engineering, evaluation frameworks, agent frameworks",
+            fit: "Production LLM pipelines (Claude Opus, Gemini, Veo3). MCP servers published on npm. LLM gateway architecture with deterministic routing. RAG systems. n8n automation.",
+          },
+          {
+            requirement: "Teaching and mentoring ability",
+            fit: "Professional trainer at WIFI Salzburg since 2013 (electrical drives, physics). AI tooling champion at GMS — trained engineering team on Claude, Cursor, MCP servers.",
+          },
+        ],
       },
       {
-        requirement: "Strong programming skills, proficiency in Python, ideally TypeScript/Java",
-        fit: "Ships production code daily in TypeScript, Dart/Flutter, Python, C/C++, Java, Ruby. 3 apps on App Store & Google Play. Full IoT stack from firmware to cloud.",
-      },
-      {
-        requirement: "Production experience with LLMs, prompt engineering, agent development",
-        fit: "Active Claude user since Oct 2024. Built MCP servers (Redmine MCP in Python, this profile MCP in TypeScript). Designed LLM gateway architecture with deterministic routing. RAG-based FAQ automation for clinic support. AI tooling champion at GMS — driving adoption of Claude, Cursor, MCP servers, n8n automation, GitHub Copilot Spaces.",
-      },
-      {
-        requirement: "Build production applications with Claude models, deliver MCP servers, sub-agents, agent skills",
-        fit: "Literally building and shipping MCP servers right now. Drove creation of company MCP monorepo at GMS. Integrated Redmine MCP, built AI-powered workflows. This MCP server itself demonstrates the skill.",
-      },
-      {
-        requirement: "Navigate ambiguity in complex organizations, high cooperation mindset",
-        fit: "As founder, simultaneously manages own products (Kubikos, EG Energiemanager) and deploys software for GMS across complex healthcare and hospitality organisations. From Lanserhof luxury resorts to rehabilitation clinics — each with unique IT landscapes and integration requirements.",
-      },
-      {
-        requirement: "Potential 25% travel to customer sites",
-        fit: "Already travels regularly for on-site installations across DACH (Nordsee to Sylt to Salzburg). 25% travel is ideal.",
+        role: "Solutions Architect, Applied AI (Startups)",
+        fitSummary: "Thomas IS a technical founder with founder-led sales experience — the exact profile this role describes. He built Kubikos from zero to Hammer Sport AG partnership, pitched at Startup World Cup, and lives in the startup ecosystem (FACTORY alumnus, FitTech Club, Investors Lounge winner).",
+        requirementMapping: [
+          {
+            requirement: "3+ years in technical customer-facing role or technical founder with founder-led sales",
+            fit: "5+ years as technical founder of Kubikos: pitched to investors, sold 50 sensors to Hammer Sport AG, presented at FIBO/ISPO, won Investors Lounge, participated in Startup World Cup 2025.",
+          },
+          {
+            requirement: "Startup or high-growth company experience; understanding of early-stage velocity",
+            fit: "Founded and runs Kubikos GmbH since 2021. Startup Salzburg SHAPE, FACTORY, FACTORY+ alumnus. FitTech Club member. Lives the startup life daily.",
+          },
+          {
+            requirement: "Software engineering or technical founder background (strong builder credibility)",
+            fit: "Built entire IoT product end-to-end: hardware sensors, C++ firmware, Flutter app (v177+), TypeScript backend, AI content pipeline. Patent holder. FFG grant recipient.",
+          },
+          {
+            requirement: "Hands-on production experience with LLM applications",
+            fit: "Production AI pipelines: exercise creator (Gemini + Veo3), training plan generator (Claude Opus), exercise research tool. LLM gateway architecture. Published MCP server. RAG systems.",
+          },
+          {
+            requirement: "Python proficiency and familiarity with LLM frameworks",
+            fit: "Python, TypeScript, Dart, C/C++, Java. Built MCP server in Python (Redmine) and TypeScript (this server). AWS Bedrock, Claude API, Gemini API.",
+          },
+        ],
       },
     ],
     uniqueStrengths: [
       "Patent holder — demonstrates deep technical innovation, not just software development",
-      "Hardware + software — can reason about the full stack from PCB to cloud, which is rare among software engineers",
-      "MLBT master (Legal & Business Aspects in Technology) — relevant for enterprise AI deployments with compliance requirements",
-      "Validated by university research — 99% sensor accuracy with Paris Lodron University shows scientific rigour",
-      "Startup ecosystem immersion — FACTORY alumnus, Investors Lounge winner, Startup World Cup participant, FitTech Club member",
-      "Teaching experience — WIFI Salzburg trainer since 2013, can translate complex technical concepts for diverse audiences",
+      "Hardware + software — can reason about the full stack from PCB to cloud, rare among software engineers",
+      "AI content pipeline builder — production use of Claude Opus, Gemini, and Veo3 for automated content creation",
+      "Published MCP server on npm — demonstrates the exact skill Anthropic's FDE role requires",
+      "MLBT master (Legal & Business Aspects in Technology) — relevant for enterprise AI deployments with compliance",
+      "Healthcare IT expertise — HL7, rehabilitation clinics, patient apps (directly relevant to Beneficial Deployments)",
+      "Teaching experience — WIFI Salzburg trainer since 2013, can translate complex AI concepts for diverse audiences",
+      "Startup ecosystem native — FACTORY alumnus, Investors Lounge winner, Startup World Cup, FitTech Club",
+      "German native speaker, English C2, Russian B2 — rare language combination for DACH market coverage",
     ],
   },
 };

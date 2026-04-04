@@ -180,16 +180,28 @@ server.tool(
 // --- Tool: why_anthropic ---
 server.tool(
   "why_anthropic",
-  "Explains why Thomas Klaushofer is a strong fit for the Forward Deployed Engineer role at Anthropic — maps his experience directly to job requirements",
-  {},
-  async () => ({
-    content: [
-      {
-        type: "text",
-        text: JSON.stringify(profile.whyAnthropic, null, 2),
-      },
-    ],
-  })
+  "Explains why Thomas Klaushofer is a strong fit for roles at Anthropic. Covers Forward Deployed Engineer, Solutions Architect (Beneficial Deployments), and Solutions Architect (Startups).",
+  {
+    role: z
+      .enum(["fde", "sa_beneficial", "sa_startups", "all"])
+      .optional()
+      .describe("Which role to explain fit for. 'fde' = Forward Deployed Engineer, 'sa_beneficial' = SA Beneficial Deployments, 'sa_startups' = SA Startups. Omit for all."),
+  },
+  async ({ role }) => {
+    const r = role ?? "all";
+    const roleMap: Record<string, number> = { fde: 0, sa_beneficial: 1, sa_startups: 2 };
+    const data = r === "all"
+      ? profile.whyAnthropic
+      : {
+          targetRole: profile.whyAnthropic.targetRoles[roleMap[r]],
+          uniqueStrengths: profile.whyAnthropic.uniqueStrengths,
+        };
+    return {
+      content: [
+        { type: "text", text: JSON.stringify(data, null, 2) },
+      ],
+    };
+  }
 );
 
 // --- Tool: ask_thomas ---
