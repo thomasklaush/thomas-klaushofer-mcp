@@ -7,7 +7,7 @@ import { profile } from "./profile.js";
 
 const server = new McpServer({
   name: "thomas-klaushofer-mcp",
-  version: "1.0.0",
+  version: "1.2.0",
 });
 
 // --- Tool: get_career_summary ---
@@ -75,7 +75,7 @@ server.tool(
 // --- Tool: get_project_details ---
 server.tool(
   "get_project_details",
-  "Get details on a specific project or list all projects. Projects include Kubikos, EG Energiemanager, Check-In App, Vagus Quest, and Felix.",
+  "Get details on a specific project or list all projects. Projects include Kubikos, EG Energiemanager, Vagus, and Unity.",
   {
     project: z
       .string()

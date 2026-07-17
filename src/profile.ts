@@ -73,8 +73,8 @@ export const profile = {
       period: "2021–present",
       company: "Kubikos GmbH",
       role: "Founder & CEO",
-      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; training plan generator (Claude Opus); exercise research tool extracting technique, pros/cons, and muscle data to auto-populate exercise database — all fully integrated into the platform. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Also developed EG Energiemanager app for WebTec (renewable energy communities). Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
-      tags: ["Patent Holder", "Firmware", "Flutter", "AWS", "IoT", "Claude Opus", "Gemini", "Veo3", "FFG Funded"],
+      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; an AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends; exercise research tool extracting technique, pros/cons, and muscle data to auto-populate the exercise database. Operates a production remote MCP server (OAuth-secured) that exposes exercise-curation, equipment, and training-plan tools directly to LLM clients like Claude — all fully integrated into the platform. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Also developed EG Energiemanager app for WebTec (renewable energy communities). Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
+      tags: ["Patent Holder", "Firmware", "Flutter", "AWS", "MCP Server", "AWS Bedrock", "IoT", "Gemini", "Veo3", "FFG Funded"],
     },
     {
       period: "2018–present",
@@ -117,8 +117,8 @@ export const profile = {
     {
       name: "Kubikos — Fitness Sensorics Platform",
       type: "Founder",
-      description: "Patented end-to-end IoT product: K-FORCE PRO sensors (0.1 kg precision, 3-tonne rated, patented magnetic distance sensor) digitise analogue gym equipment. KUBIKO Chip with patented sensor fusion algorithm achieves 99% accuracy (validated with Paris Lodron University Salzburg). Flutter app (v177+), TypeScript backend, FIT CLOUD B2B platform for manufacturers and gyms. Partnered with Hammer Sport AG. Piloting with FITINN. FFG-funded energy harvesting R&D. Exhibited at FIBO 2024/25 and ISPO Munich 2022.",
-      tags: ["Flutter", "nRF52840", "C++ Firmware", "AWS", "BLE", "Kalman Filter", "TypeScript", "Patent"],
+      description: "Patented end-to-end IoT product: K-FORCE PRO sensors (0.1 kg precision, 3-tonne rated, patented magnetic distance sensor) digitise analogue gym equipment. KUBIKO Chip with patented sensor fusion algorithm achieves 99% accuracy (validated with Paris Lodron University Salzburg). Flutter app (v177+), TypeScript backend, FIT CLOUD B2B platform for manufacturers and gyms. AI layer: AWS Bedrock training-plan engine (migrated off the earlier n8n/Mistral stack), a Gemini + Veo3 exercise-content pipeline, and a production remote MCP server (OAuth) that lets Claude curate exercises/equipment and generate training plans. Partnered with Hammer Sport AG. Piloting with FITINN. FFG-funded energy harvesting R&D. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
+      tags: ["Flutter", "nRF52840", "C++ Firmware", "AWS", "BLE", "Kalman Filter", "TypeScript", "MCP Server", "AWS Bedrock", "Patent"],
       url: "https://kubikos.net",
     },
     {
@@ -169,8 +169,8 @@ export const profile = {
     },
     ai: {
       title: "AI & Generative AI",
-      items: ["Claude API", "Claude Opus", "MCP Servers", "AWS Bedrock", "Google Gemini", "Veo3", "RAG", "n8n", "LLM Gateway Routing"],
-      context: "Built and published MCP servers (Redmine MCP in Python, this profile MCP in TypeScript on npm). LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). Training plan generator (Claude Opus). Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
+      items: ["Claude API", "Claude Opus", "MCP Servers", "Remote MCP (OAuth)", "AWS Bedrock", "Google Gemini", "Veo3", "RAG", "n8n", "LLM Gateway Routing"],
+      context: "Builds and ships MCP servers across the stack: a published npm server (this profile), a Redmine MCP in Python, and production remote MCP servers (OAuth) inside the Kubikos platform that expose exercise-curation, equipment, and training-plan tools directly to Claude. LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends. Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
     },
     industrial: {
       title: "Industrial Automation",
@@ -241,7 +241,7 @@ export const profile = {
     targetRoles: [
       {
         role: "Forward Deployed Engineer, Applied AI",
-        fitSummary: "Thomas brings a rare combination: technical founder who has built and shipped end-to-end products (hardware to cloud), deep customer-facing deployment experience across DACH, and hands-on MCP/Claude ecosystem experience — including building this very MCP server and production AI pipelines with Claude Opus, Gemini, and Veo3.",
+        fitSummary: "Thomas brings a rare combination: technical founder who has built and shipped end-to-end products (hardware to cloud), deep customer-facing deployment experience across DACH, and hands-on MCP/Claude ecosystem experience — including production remote MCP servers that Claude drives directly, an AWS Bedrock plan engine, and a Gemini/Veo3 content pipeline.",
         requirementMapping: [
           {
             requirement: "3-4+ years in a technical, customer-facing role or former technical founder",
@@ -249,7 +249,7 @@ export const profile = {
           },
           {
             requirement: "Production experience with LLMs, prompt engineering, agent development",
-            fit: "Built production AI pipelines: exercise creator (Gemini + Veo3), training plan generator (Claude Opus), exercise research tool, RAG-based FAQ chatbot. Designed LLM gateway architecture with deterministic routing (AWS Bedrock, multi-provider). Built and published MCP servers. AI tooling champion at GMS.",
+            fit: "Built production AI pipelines: exercise creator (Gemini + Veo3), AWS Bedrock training-plan engine, exercise research tool, RAG-based FAQ chatbot. Designed LLM gateway architecture with deterministic routing (AWS Bedrock, multi-provider). Built and published MCP servers plus production remote MCP servers Claude consumes. AI tooling champion at GMS.",
           },
           {
             requirement: "Strong programming skills, Python + ideally TypeScript/Java",
@@ -257,7 +257,7 @@ export const profile = {
           },
           {
             requirement: "Build production applications with Claude, deliver MCP servers, sub-agents, agent skills",
-            fit: "Published MCP server on npm (thomas-klaushofer-mcp). Built Redmine MCP in Python. Drove company MCP monorepo at GMS. Training plan generator built on Claude Opus. This MCP server itself demonstrates the skill.",
+            fit: "Published MCP server on npm (thomas-klaushofer-mcp). Built Redmine MCP in Python. Runs production remote MCP servers (OAuth) in the Kubikos platform that Claude uses to curate exercises/equipment and generate training plans. Drove company MCP monorepo at GMS. This MCP server itself demonstrates the skill.",
           },
           {
             requirement: "Navigate ambiguity, high cooperation mindset",
@@ -287,7 +287,7 @@ export const profile = {
           },
           {
             requirement: "Familiarity with LLM implementation patterns, prompt engineering, evaluation frameworks, agent frameworks",
-            fit: "Production LLM pipelines (Claude Opus, Gemini, Veo3). MCP servers published on npm. LLM gateway architecture with deterministic routing. RAG systems. n8n automation.",
+            fit: "Production LLM pipelines (AWS Bedrock plan engine, Gemini, Veo3). MCP servers published on npm plus production remote MCP servers Claude consumes. LLM gateway architecture with deterministic routing. RAG systems. n8n automation.",
           },
           {
             requirement: "Teaching and mentoring ability",
@@ -313,7 +313,7 @@ export const profile = {
           },
           {
             requirement: "Hands-on production experience with LLM applications",
-            fit: "Production AI pipelines: exercise creator (Gemini + Veo3), training plan generator (Claude Opus), exercise research tool. LLM gateway architecture. Published MCP server. RAG systems.",
+            fit: "Production AI pipelines: exercise creator (Gemini + Veo3), AWS Bedrock training-plan engine, exercise research tool. LLM gateway architecture. Published npm MCP server plus production remote MCP servers (OAuth) driving the Kubikos platform. RAG systems.",
           },
           {
             requirement: "Python proficiency and familiarity with LLM frameworks",
@@ -325,8 +325,8 @@ export const profile = {
     uniqueStrengths: [
       "Patent holder — demonstrates deep technical innovation, not just software development",
       "Hardware + software — can reason about the full stack from PCB to cloud, rare among software engineers",
-      "AI content pipeline builder — production use of Claude Opus, Gemini, and Veo3 for automated content creation",
-      "Published MCP server on npm — demonstrates the exact skill Anthropic's FDE role requires",
+      "AI content pipeline builder — production use of AWS Bedrock, Gemini, and Veo3 for automated content and training-plan generation",
+      "Published MCP server on npm plus production remote MCP servers (OAuth) running live in the Kubikos product — demonstrates the exact skill Anthropic's FDE role requires, at real scale",
       "MLBT master (Legal & Business Aspects in Technology) — relevant for enterprise AI deployments with compliance",
       "Healthcare IT expertise — HL7, rehabilitation clinics, patient apps (directly relevant to Beneficial Deployments)",
       "Teaching experience — WIFI Salzburg trainer since 2013, can translate complex AI concepts for diverse audiences",
