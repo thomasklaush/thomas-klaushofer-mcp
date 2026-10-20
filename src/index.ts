@@ -80,7 +80,7 @@ server.tool(
 // --- Tool: get_project_details ---
 server.tool(
   "get_project_details",
-  "Get details on a specific project or list all projects. Projects include Inbox Hub (personal AI assistant), Kubikos, EG Energiemanager, Vagus, Unity, and AI agents/MCP for hotel & clinic software.",
+  "Get details on a specific project or list all projects. Projects include Didymus (personal AI assistant), Kubikos, EG Energiemanager, Vagus, Unity, and AI agents/MCP for hotel & clinic software.",
   {
     project: z
       .string()
@@ -297,7 +297,7 @@ server.tool(
       {
         label: "Projects",
         data: profile.projects,
-        keywords: ["project", "built", "build", "product", "app", "sensor", "check-in", "vagus", "felix", "energy", "kubikos", "inbox", "assistant", "agent"],
+        keywords: ["project", "built", "build", "product", "app", "sensor", "check-in", "vagus", "felix", "energy", "kubikos", "inbox", "didymus", "assistant", "agent"],
       },
       {
         label: "Talks, Workshops & Courses",
