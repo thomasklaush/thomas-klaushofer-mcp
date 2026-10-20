@@ -7,13 +7,13 @@ import { profile } from "./profile.js";
 
 const server = new McpServer({
   name: "thomas-klaushofer-mcp",
-  version: "1.2.0",
+  version: "1.3.0",
 });
 
 // --- Tool: get_career_summary ---
 server.tool(
   "get_career_summary",
-  "Get a comprehensive overview of Thomas Klaushofer's career — who he is, what he's built, and where he's headed",
+  "Get a comprehensive overview of Thomas Klaushofer — AI engineer, technical founder and trainer: who he is, what he's built, what he teaches, and where he's headed",
   {},
   async () => ({
     content: [
@@ -28,6 +28,10 @@ server.tool(
               .filter((e) => e.period.includes("present"))
               .map((e) => ({ company: e.company, role: e.role, period: e.period })),
             languages: profile.languages,
+            speaking: {
+              positioning: profile.speaking.positioning,
+              topics: profile.speaking.topics.map((t) => t.title),
+            },
           },
           null,
           2
@@ -50,6 +54,7 @@ server.tool(
         "healthcare",
         "energy",
         "ai",
+        "security",
         "industrial",
         "languages",
         "tools",
@@ -75,7 +80,7 @@ server.tool(
 // --- Tool: get_project_details ---
 server.tool(
   "get_project_details",
-  "Get details on a specific project or list all projects. Projects include Kubikos, EG Energiemanager, Vagus, and Unity.",
+  "Get details on a specific project or list all projects. Projects include Inbox Hub (personal AI assistant), Kubikos, EG Energiemanager, Vagus, Unity, and AI agents/MCP for hotel & clinic software.",
   {
     project: z
       .string()
@@ -177,6 +182,55 @@ server.tool(
   }
 );
 
+// --- Tool: get_speaking_topics ---
+server.tool(
+  "get_speaking_topics",
+  "Get Thomas's talks, workshops and courses on AI — topics from his own practice (personal AI assistants, safe AI agents, MCP servers, Claude Code in teams, AI in SMEs & data protection, AI at work), formats, audiences and teaching background",
+  {
+    topic: z
+      .string()
+      .optional()
+      .describe("Topic to look up (partial match on id, title or keywords). Omit for the full speaking profile."),
+  },
+  async ({ topic }) => {
+    const sp = profile.speaking;
+    if (!topic) {
+      return {
+        content: [{ type: "text", text: JSON.stringify(sp, null, 2) }],
+      };
+    }
+    const lower = topic.toLowerCase();
+    const matches = sp.topics.filter(
+      (t) =>
+        t.id.includes(lower) ||
+        t.title.toLowerCase().includes(lower) ||
+        t.keywords.some((k) => k.includes(lower) || lower.includes(k))
+    );
+    if (matches.length === 0) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: `No talk topic found matching "${topic}". Available: ${sp.topics.map((t) => t.title).join(", ")}`,
+          },
+        ],
+      };
+    }
+    return {
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify(
+            { topics: matches, formats: sp.formats, audiences: sp.audiences, languages: sp.languages, booking: sp.booking },
+            null,
+            2
+          ),
+        },
+      ],
+    };
+  }
+);
+
 // --- Tool: why_anthropic ---
 server.tool(
   "why_anthropic",
@@ -228,7 +282,7 @@ server.tool(
       {
         label: "Current Roles",
         data: profile.experience.filter((e) => e.period.includes("present")),
-        keywords: ["current", "now", "doing", "role", "job", "work", "kubikos", "freelance", "gms"],
+        keywords: ["current", "now", "doing", "role", "job", "work", "kubikos", "freelance", "gms", "webtec"],
       },
       {
         label: "Full Experience",
@@ -243,7 +297,12 @@ server.tool(
       {
         label: "Projects",
         data: profile.projects,
-        keywords: ["project", "built", "build", "product", "app", "sensor", "check-in", "vagus", "felix", "energy", "kubikos"],
+        keywords: ["project", "built", "build", "product", "app", "sensor", "check-in", "vagus", "felix", "energy", "kubikos", "inbox", "assistant", "agent"],
+      },
+      {
+        label: "Talks, Workshops & Courses",
+        data: profile.speaking,
+        keywords: ["talk", "speak", "speaker", "keynote", "workshop", "course", "teach", "trainer", "lecture", "vortrag", "kurs", "schulung", "seminar", "book"],
       },
       {
         label: "Achievements",
