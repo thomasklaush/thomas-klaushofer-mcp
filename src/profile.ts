@@ -21,7 +21,7 @@ export const profile = {
     twitter: "https://x.com/ThomasKlaush",
   },
 
-  summary: `Technical founder, mechatronics engineer, and full-stack developer based in Salzburg, Austria. Founder & CEO of Kubikos GmbH — a patented IoT fitness sensor platform with 99% accuracy (validated with Paris Lodron University Salzburg). German patent holder (DE 112021007607.8). Partnered with Hammer Sport AG; exhibited at FIBO and ISPO Munich. Simultaneously runs Sport Performance Systems e.U. as a freelance consultancy, deploying healthcare IT, hotel management, and energy management software across dozens of DACH locations. Background in mechatronics and robotics (MSc with distinction, JKU Linz), with a second master's in Legal & Business Aspects in Technology. 15+ years of professional experience spanning semiconductor equipment, industrial automation, embedded systems, mobile apps, cloud architectures, and AI integration. Certified IPMA Project Manager, Strategic & Technical Product Manager.`,
+  summary: `AI engineer, technical founder and trainer based in Salzburg, Austria. Builds AI that does real work — a personal AI assistant that triages mail, chats, calendars and tickets with Claude (drafts only, nothing sent without him), AI agents with human approval gates and least-privilege tools, and production MCP servers that connect Claude to existing systems — and offers talks, workshops and courses on AI at work, AI agents and AI-assisted development (technical trainer since 2013). Founder & CEO of Kubikos GmbH — a patented IoT fitness sensor platform with 99% accuracy (validated with Paris Lodron University Salzburg). German patent holder (DE 112021007607.8). Partnered with Hammer Sport AG; exhibited at FIBO and ISPO Munich. Simultaneously runs Sport Performance Systems e.U. as a freelance consultancy for healthcare IT, hotel management, and energy management software — since mid-2026 with a focus on AI agents, MCP servers, AI documentation pipelines and security. Background in mechatronics and robotics (MSc with distinction, JKU Linz), with a second master's in Legal & Business Aspects in Technology. 15+ years of professional experience spanning semiconductor equipment, industrial automation, embedded systems, mobile apps, cloud architectures, and AI integration. Certified IPMA Project Manager, Strategic & Technical Product Manager.`,
 
   education: [
     {
@@ -73,15 +73,22 @@ export const profile = {
       period: "2021–present",
       company: "Kubikos GmbH",
       role: "Founder & CEO",
-      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; an AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends; exercise research tool extracting technique, pros/cons, and muscle data to auto-populate the exercise database. Operates a production remote MCP server (OAuth-secured) that exposes exercise-curation, equipment, and training-plan tools directly to LLM clients like Claude — all fully integrated into the platform. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Also developed EG Energiemanager app for WebTec (renewable energy communities). Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
+      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; an AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends; exercise research tool extracting technique, pros/cons, and muscle data to auto-populate the exercise database. Operates a production remote MCP server (OAuth-secured, incl. native MCP clients per RFC 8252) with an admin tool suite that lets an AI agent curate the exercise and equipment catalogue (soft-deletes with retention, re-parenting, bulk re-tagging, backfill worklists), plus training-plan tools — all fully integrated into the platform. AI-generated private user exercise drafts via Bedrock. Development runs on versioned Claude Code skills (bug triage, Sentry triage, release notes, deploys) with integration tests as a blocking release gate. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
       tags: ["Patent Holder", "Firmware", "Flutter", "AWS", "MCP Server", "AWS Bedrock", "IoT", "Gemini", "Veo3", "FFG Funded"],
+    },
+    {
+      period: "2025–present",
+      company: "WebTec",
+      role: "Co-owner (shareholder) & Software / AI Development",
+      description: "Shareholder of WebTec. Built the EG Energiemanager app for renewable energy communities (Startup Salzburg FACTORY+ 2025, Energiemaker track) and, since 2026, its wider energy platform: AI ticket triage, spot-price battery scheduling, PV/load forecasting — developed with Claude Code role-based subagents across multiple repositories.",
+      tags: ["Flutter", "AI Ticket Triage", "MCP", "AWS CDK", "Claude Code Subagents", "Energy"],
     },
     {
       period: "2018–present",
       company: "Sport Performance Systems e.U.",
       role: "Owner & Freelance Software Engineer",
-      description: "Independent consultancy. Long-term client GMS-Salzburg: customer success and engineering for Vagus (patient-facing app for rehabilitation clinics, HL7 ADT/SIU interfaces, RAG-based FAQ chatbot, deployed across dozens of DACH facilities). Partial team lead on Unity — a next-generation platform unifying hotel management (Felix), medical clinic management (Topas), and patient applications (Vagus) into a single architecture. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows. Built custom MCP servers (Redmine MCP in Python). AI tooling champion internally — driving adoption of Claude, Cursor, MCP servers, n8n automation, and GitHub Copilot Spaces.",
-      tags: ["LLM Routing", "MCP Servers", "HL7", "AWS Bedrock", "RAG", "Ruby on Rails", "AI Tooling", "Customer Success"],
+      description: "Independent consultancy. Long-term client GMS-Salzburg: customer success and engineering for Vagus (patient-facing app for rehabilitation clinics, HL7 ADT/SIU interfaces, RAG-based FAQ chatbot, deployed across dozens of DACH facilities). Partial team lead on Unity — a next-generation platform unifying hotel management (Felix), medical clinic management (Topas), and patient applications (Vagus) into a single architecture. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows. Built custom MCP servers (Redmine MCP in Python). AI tooling champion internally — driving adoption of Claude, Cursor, MCP servers, n8n automation, and GitHub Copilot Spaces. Since mid-2026 focused on AI: agents for guest and booking workflows in hotel software (triage agent handing over to specialists, tools filtered by user permissions, every write action waits for human approval, cost limits via an LLM gateway); MCP servers over existing backends that act with the calling user's token; an AI pipeline for the user manual (writer/reviewer prompts, every change as a pull request for human approval); a security and architecture audit of the multi-tenant platform, tracked through to verified fixes; plus HL7 interface work and CI/CD.",
+      tags: ["AI Agents", "Human-in-the-loop", "MCP Servers", "LLM Routing", "Security Audit", "HL7", "AWS Bedrock", "RAG", "Ruby on Rails", "AI Tooling", "Customer Success"],
     },
     {
       period: "2017–2021",
@@ -108,24 +115,30 @@ export const profile = {
       period: "2013–present",
       company: "WIFI Salzburg",
       role: "Technical Trainer",
-      description: "Part-time instructor for electrical drives and physics.",
-      tags: ["Teaching", "Electrical Drives", "Physics"],
+      description: "Part-time instructor for electrical drives and physics. Now also offering talks, workshops and courses on AI (see get_speaking_topics).",
+      tags: ["Teaching", "Electrical Drives", "Physics", "AI Training"],
     },
   ],
 
   projects: [
     {
+      name: "Inbox Hub — Personal AI Assistant",
+      type: "Personal project",
+      description: "Thomas's own AI assistant, running locally on his Mac. Merges mail (IMAP, Microsoft Graph), WhatsApp, Slack, calendars, tickets and notes into one calm dashboard. Every 15 minutes Claude Code runs headless to triage by company, project, priority and deadline, link related threads across sources into cases, and write an overview. Replies are prepared as drafts only — nothing is ever sent without Thomas (the mail draft token has no send permission). Feature wishes from chats are collected, deduplicated, checked against the code and passed through a review stage (problem, affected, version, urgency, done-when); missing details become 1–3 follow-up questions before a ticket is created and its status synced back. Receipts are matched to company and month folder for bookkeeping, copied only on Thomas's click, plus monthly status and payment matching. A sales pipeline view links each lead to the latest real contact found across all channels. Voice messages are transcribed locally with whisper.cpp. Security by design: messages are treated as untrusted input, so AI steps that read them get minimal rights (search/read tools only, write only to a scratch folder); outputs are parsed and validated before they are applied; tokens are separated by purpose (read, calendar write, drafts, files); secrets are masked in inputs and outputs; the dashboard binds to localhost with host checks against DNS rebinding. Exposes its own local MCP server so Claude can query and act on the hub.",
+      tags: ["Claude Code headless", "MCP Server", "Personal AI Assistant", "Human-in-the-loop", "Least Privilege", "Python", "SQLite", "whisper.cpp", "Microsoft Graph", "Swift"],
+    },
+    {
       name: "Kubikos — Fitness Sensorics Platform",
       type: "Founder",
-      description: "Patented end-to-end IoT product: K-FORCE PRO sensors (0.1 kg precision, 3-tonne rated, patented magnetic distance sensor) digitise analogue gym equipment. KUBIKO Chip with patented sensor fusion algorithm achieves 99% accuracy (validated with Paris Lodron University Salzburg). Flutter app (v177+), TypeScript backend, FIT CLOUD B2B platform for manufacturers and gyms. AI layer: AWS Bedrock training-plan engine (migrated off the earlier n8n/Mistral stack), a Gemini + Veo3 exercise-content pipeline, and a production remote MCP server (OAuth) that lets Claude curate exercises/equipment and generate training plans. Partnered with Hammer Sport AG. Piloting with FITINN. FFG-funded energy harvesting R&D. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
+      description: "Patented end-to-end IoT product: K-FORCE PRO sensors (0.1 kg precision, 3-tonne rated, patented magnetic distance sensor) digitise analogue gym equipment. KUBIKO Chip with patented sensor fusion algorithm achieves 99% accuracy (validated with Paris Lodron University Salzburg). Flutter app (v177+), TypeScript backend, FIT CLOUD B2B platform for manufacturers and gyms. AI layer: AWS Bedrock training-plan engine (migrated off the earlier n8n/Mistral stack), AI-generated user exercise drafts, a Gemini + Veo3 exercise-content pipeline, and a production remote MCP server (OAuth) with an admin tool suite that lets an AI agent curate exercises/equipment and generate training plans. Developed with versioned Claude Code skills and integration tests as a blocking release gate. Partnered with Hammer Sport AG. Piloting with FITINN. FFG-funded energy harvesting R&D. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
       tags: ["Flutter", "nRF52840", "C++ Firmware", "AWS", "BLE", "Kalman Filter", "TypeScript", "MCP Server", "AWS Bedrock", "Patent"],
       url: "https://kubikos.net",
     },
     {
       name: "EG Energiemanager — WebTec",
-      type: "Kubikos product",
-      description: "Mobile app for Austrian Erneuerbare-Energie-Gemeinschaften (EEG), built for WebTec. Real-time display of available community energy, consumption optimisation, and hardware configuration. Features ML-based PV generation nowcasting using Open-Meteo weather data and EEG billing API integration. Available on App Store and Google Play. Startup Salzburg FACTORY+ 2025 (Energiemaker track).",
-      tags: ["Flutter", "Modbus TCP", "PV Systems", "EEG API", "ML Nowcasting"],
+      type: "WebTec product (Thomas is co-owner)",
+      description: "Mobile app for Austrian Erneuerbare-Energie-Gemeinschaften (EEG), built for WebTec. Real-time display of available community energy, consumption optimisation, and hardware configuration. Features ML-based PV generation nowcasting using Open-Meteo weather data and EEG billing API integration. Available on App Store and Google Play. Startup Salzburg FACTORY+ 2025 (Energiemaker track). Around it, since 2026: a support ticket platform with AI triage (local embeddings for duplicate detection and assignee suggestions, Claude classification on pseudonymised text — suggestions only, with budget alerts) and an MCP endpoint for tickets; a spot-price manager scheduling batteries against day-ahead prices (AWS CDK, Python Lambdas); physics-based PV and load forecasting with backtests; and a simulation lab for the control chain. The multi-repo platform is developed with Claude Code: a central plan, role-based subagents per repo in separate worktrees, a read-only contract guardian, guard hooks and repo-specific skills.",
+      tags: ["Flutter", "Modbus TCP", "PV Systems", "EEG API", "ML Nowcasting", "AI Ticket Triage", "MCP", "AWS CDK", "Claude Code Subagents"],
     },
     {
       name: "Vagus — Patient App & Clinic Interfaces",
@@ -138,6 +151,12 @@ export const profile = {
       type: "Freelance (GMS-Salzburg)",
       description: "Next-generation platform unifying multiple applications: Felix (hotel management), Topas (medical/clinic management), and Vagus (patient app) into a single architecture. Partial team lead. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows.",
       tags: ["LLM Routing", "AWS Bedrock", "TypeScript", "MCP Servers", "n8n", "Ruby on Rails"],
+    },
+    {
+      name: "AI Agents, MCP & AI Handbook — Hotel & Clinic Software",
+      type: "Freelance (GMS-Salzburg)",
+      description: "AI agents for guest and booking workflows in hotel software: a triage agent hands over to specialists, tools come from OpenAPI and MCP and are filtered by the user's permissions, every write action waits for human approval, with a visible, correctable agent memory and cost limits via an LLM gateway. MCP servers on top of existing backends that act with the calling user's token, with hardened auth and per-tool rights. An AI documentation pipeline (docs-as-code) for the user manual: writer and reviewer prompts against quality criteria, every change as a pull request for human approval, automatic detection of outdated pages and screenshots from releases and E2E runs. Security and architecture audit of a multi-tenant platform, with adversarial review of findings and tracked re-checks through to verified fixes. Plus HL7 interface engineering and CI/CD (GitHub Actions, Jenkins, Docker, Kubernetes).",
+      tags: ["AI Agents", "Human Approval", "MCP Servers", "OpenAI Agents SDK", "LiteLLM", "Docs-as-Code", "Security Audit", "HL7", "Playwright"],
     },
   ],
 
@@ -169,8 +188,8 @@ export const profile = {
     },
     ai: {
       title: "AI & Generative AI",
-      items: ["Claude API", "Claude Opus", "MCP Servers", "Remote MCP (OAuth)", "AWS Bedrock", "Google Gemini", "Veo3", "RAG", "n8n", "LLM Gateway Routing"],
-      context: "Builds and ships MCP servers across the stack: a published npm server (this profile), a Redmine MCP in Python, and production remote MCP servers (OAuth) inside the Kubikos platform that expose exercise-curation, equipment, and training-plan tools directly to Claude. LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends. Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
+      items: ["Claude Code (skills, hooks, subagents, headless)", "Claude API", "AI Agents", "Human-in-the-loop approval", "MCP Servers", "Remote MCP (OAuth)", "AWS Bedrock", "Embeddings", "Google Gemini", "Veo3", "RAG", "n8n", "LLM Gateway Routing"],
+      context: "Builds a personal AI assistant (Inbox Hub) with headless Claude triage, drafts-only output and least-privilege AI steps. Builds AI agents with human approval gates, permission-filtered tools and cost limits. Builds and ships MCP servers across the stack: a published npm server (this profile), a Redmine MCP in Python, MCP servers over existing hotel and ticketing backends that pass the caller's permissions through, and production remote MCP servers (OAuth) inside the Kubikos platform that expose exercise-curation, equipment, and training-plan tools directly to Claude. AI ticket triage with local embeddings and Claude on pseudonymised text. Claude Code multi-repo workflows with role-based subagents, guard hooks and skills; AI docs-as-code pipeline with human review. LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends. Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
     },
     industrial: {
       title: "Industrial Automation",
@@ -180,6 +199,11 @@ export const profile = {
     languages: {
       title: "Programming Languages",
       items: ["TypeScript", "JavaScript", "Python", "Dart", "C", "C++", "Java", "Assembler", "LaTeX"],
+    },
+    security: {
+      title: "Security & DevOps",
+      items: ["Security & architecture audit", "Auth hardening", "Secrets hygiene", "GitHub Actions", "Forgejo Actions", "Jenkins", "Docker", "Kubernetes / Helm", "AWS CDK"],
+      context: "Security and architecture audit of a multi-tenant platform with tracked fixes; least-privilege design for AI agents; CI/CD and container deployments.",
     },
     tools: {
       title: "CAD & Simulation",
@@ -222,7 +246,7 @@ export const profile = {
       "Gym80 — prototyping partnership (received STEP files Dec 2025)",
       "BH Fitness — presentation and evaluation",
       "xdevelop — PCB/electronics development partner (PV foil, custom PCB design)",
-      "WebTec — technical partner for EG Energiemanager (E2S API, SMA-EEG integration)",
+      "WebTec (co-owned) — EG Energiemanager app and energy platform (EEG billing API integration)",
     ],
     competitions: [
       "Born Global Champions Award (WKO) — applied 2025, invited 2026",
@@ -235,6 +259,68 @@ export const profile = {
       "FitTech Club member — Masterminds sessions (Hardware, Sensors & Wearables)",
       "ERFA-Runde — 33rd ERFA Software round (Innovation Salzburg, Sep 2025)",
     ],
+  },
+
+  speaking: {
+    positioning: "Talks, workshops and courses on AI — every topic comes from systems Thomas builds and runs himself. Shows what works, what breaks, and where humans stay in control. Focus on using AI productively without giving up security and data protection.",
+    languages: ["German", "English"],
+    topics: [
+      {
+        id: "personal-ai-assistant",
+        title: "Building a personal AI assistant",
+        summary: "Mail, chats, calendar and tickets in one place, triaged by Claude running headless. Drafts only — nothing goes out without a human. Feature wishes pass a review stage with follow-up questions before becoming tickets; receipts are matched for bookkeeping.",
+        basedOn: ["Inbox Hub (own daily assistant)"],
+        keywords: ["assistant", "inbox", "personal", "claudia", "mail", "triage", "drafts", "alltag"],
+      },
+      {
+        id: "safe-ai-agents",
+        title: "Safe AI agents: approvals & least privilege",
+        summary: "Treat every message as untrusted input. AI steps that read foreign content get minimal rights, outputs are validated before use, tokens are split by purpose, every write action waits for human approval. Patterns, failure modes, and how to audit them.",
+        basedOn: ["Inbox Hub", "AI agents for hotel software", "Platform security audit"],
+        keywords: ["agent", "security", "safe", "approval", "least privilege", "prompt injection", "sicherheit", "freigabe"],
+      },
+      {
+        id: "mcp-for-existing-systems",
+        title: "MCP servers for existing systems",
+        summary: "Connecting Claude to existing REST backends, ticketing, time tracking and product catalogues via the Model Context Protocol: OAuth for remote servers, passing the calling user's permissions through, per-tool rights, and what not to expose.",
+        basedOn: ["Kubikos remote MCP (OAuth)", "MCP over a hotel backend", "Ticket MCP", "Redmine MCP", "this profile server"],
+        keywords: ["mcp", "model context protocol", "integration", "oauth", "backend", "api"],
+      },
+      {
+        id: "claude-code-in-teams",
+        title: "AI-assisted development with Claude Code in teams",
+        summary: "From prompting to a workflow: CLAUDE.md per repo, skills, guard hooks, role-based subagents across multiple repositories, pull requests as the human review point — plus docs-as-code with an AI pipeline that keeps a user manual current under human approval.",
+        basedOn: ["Multi-repo energy platform", "AI handbook pipeline", "Kubikos development"],
+        keywords: ["claude code", "development", "coding", "team", "subagent", "skills", "hooks", "entwicklung"],
+      },
+      {
+        id: "ai-in-smes-data-protection",
+        title: "AI in SMEs & data protection",
+        summary: "Where AI pays off in small and mid-sized companies, and how to keep personal data safe: pseudonymise before classification, transcribe locally, mask secrets, keep AI suggestions as suggestions. A pragmatic engineering view, informed by a master's in legal & business aspects of technology (not legal advice).",
+        basedOn: ["AI ticket triage", "Healthcare and energy projects"],
+        keywords: ["sme", "kmu", "mittelstand", "gdpr", "dsgvo", "privacy", "data protection", "datenschutz"],
+      },
+      {
+        id: "ai-in-everyday-work",
+        title: "AI in everyday work",
+        summary: "A hands-on start for non-developers: what today's assistants can reliably do, how to brief them, how to check their output, and which tasks to hand over first — with examples from mail, planning, documentation and bookkeeping.",
+        basedOn: ["Own daily routine with an AI assistant"],
+        keywords: ["everyday", "work", "beginner", "non-developer", "productivity", "arbeitsalltag"],
+      },
+    ],
+    formats: ["Talk or keynote", "Hands-on workshop", "Multi-part course or in-house training", "On-site or remote, any length"],
+    audiences: [
+      "Executives and SMEs deciding where AI fits",
+      "Development teams adopting AI agents and Claude Code",
+      "Knowledge workers starting with AI at work",
+    ],
+    teachingBackground: [
+      "Technical trainer at WIFI Salzburg since 2013 (electrical drives, physics)",
+      "AI tooling champion — drives adoption of Claude, MCP servers and automation in engineering teams",
+      "International presentations at semiconductor trade shows and symposia (Siconnex)",
+      "Has presented Kubikos — an AI-enhanced training app with a high-precision sensor — on several occasions",
+    ],
+    booking: "Enquiries by email (see get_contact). Dates, durations and fees on request.",
   },
 
   whyAnthropic: {

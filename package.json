@@ -1,7 +1,7 @@
 {
   "name": "thomas-klaushofer-mcp",
-  "version": "1.2.0",
-  "description": "MCP server serving Thomas Klaushofer's professional profile — career, skills, projects, and achievements. Built as a demonstration of MCP server development.",
+  "version": "1.3.0",
+  "description": "MCP server serving Thomas Klaushofer's professional profile — career, AI projects, skills, talks & workshops on AI, and achievements. Built as a demonstration of MCP server development.",
   "main": "dist/index.js",
   "bin": {
     "thomas-klaushofer-mcp": "dist/index.js"
@@ -16,7 +16,9 @@
     "claude",
     "anthropic",
     "portfolio",
-    "resume"
+    "resume",
+    "speaker",
+    "ai-workshops"
   ],
   "author": "Thomas Klaushofer <Thomas.klaushofer@smaspos.com>",
   "license": "MIT",
