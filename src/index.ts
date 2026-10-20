@@ -302,12 +302,12 @@ server.tool(
       {
         label: "Talks, Workshops & Courses",
         data: profile.speaking,
-        keywords: ["talk", "speak", "speaker", "keynote", "workshop", "course", "teach", "trainer", "lecture", "vortrag", "kurs", "schulung", "seminar", "book"],
+        keywords: ["talk", "speak", "speaker", "keynote", "workshop", "course", "teach", "trainer", "lecture", "vortrag", "kurs", "schulung", "seminar", "book", "pitch", "presentation", "appearance", "event"],
       },
       {
         label: "Achievements",
         data: profile.achievements,
-        keywords: ["achievement", "patent", "grant", "ffg", "startup", "fibo", "ispo", "trade show", "partner", "hammer", "fitinn"],
+        keywords: ["achievement", "patent", "grant", "ffg", "startup", "fibo", "ispo", "trade show", "partner", "hammer", "fitinn", "gym80"],
       },
       {
         label: "Why Anthropic",
