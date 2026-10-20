@@ -122,7 +122,7 @@ export const profile = {
 
   projects: [
     {
-      name: "Inbox Hub — Personal AI Assistant",
+      name: "Didymus — Personal AI Assistant",
       type: "Personal project",
       description: "Thomas's own AI assistant, running locally on his Mac. Merges mail (IMAP, Microsoft Graph), WhatsApp, Slack, calendars, tickets and notes into one calm dashboard. Every 15 minutes Claude Code runs headless to triage by company, project, priority and deadline, link related threads across sources into cases, and write an overview. Replies are prepared as drafts only — nothing is ever sent without Thomas (the mail draft token has no send permission). Feature wishes from chats are collected, deduplicated, checked against the code and passed through a review stage (problem, affected, version, urgency, done-when); missing details become 1–3 follow-up questions before a ticket is created and its status synced back. Receipts are matched to company and month folder for bookkeeping, copied only on Thomas's click, plus monthly status and payment matching. A sales pipeline view links each lead to the latest real contact found across all channels. Voice messages are transcribed locally with whisper.cpp. Security by design: messages are treated as untrusted input, so AI steps that read them get minimal rights (search/read tools only, write only to a scratch folder); outputs are parsed and validated before they are applied; tokens are separated by purpose (read, calendar write, drafts, files); secrets are masked in inputs and outputs; the dashboard binds to localhost with host checks against DNS rebinding. Exposes its own local MCP server so Claude can query and act on the hub.",
       tags: ["Claude Code headless", "MCP Server", "Personal AI Assistant", "Human-in-the-loop", "Least Privilege", "Python", "SQLite", "whisper.cpp", "Microsoft Graph", "Swift"],
@@ -189,7 +189,7 @@ export const profile = {
     ai: {
       title: "AI & Generative AI",
       items: ["Claude Code (skills, hooks, subagents, headless)", "Claude API", "AI Agents", "Human-in-the-loop approval", "MCP Servers", "Remote MCP (OAuth)", "AWS Bedrock", "Embeddings", "Google Gemini", "Veo3", "RAG", "n8n", "LLM Gateway Routing"],
-      context: "Builds a personal AI assistant (Inbox Hub) with headless Claude triage, drafts-only output and least-privilege AI steps. Builds AI agents with human approval gates, permission-filtered tools and cost limits. Builds and ships MCP servers across the stack: a published npm server (this profile), a Redmine MCP in Python, MCP servers over existing hotel and ticketing backends that pass the caller's permissions through, and production remote MCP servers (OAuth) inside the Kubikos platform that expose exercise-curation, equipment, and training-plan tools directly to Claude. AI ticket triage with local embeddings and Claude on pseudonymised text. Claude Code multi-repo workflows with role-based subagents, guard hooks and skills; AI docs-as-code pipeline with human review. LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends. Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
+      context: "Builds a personal AI assistant (Didymus) with headless Claude triage, drafts-only output and least-privilege AI steps. Builds AI agents with human approval gates, permission-filtered tools and cost limits. Builds and ships MCP servers across the stack: a published npm server (this profile), a Redmine MCP in Python, MCP servers over existing hotel and ticketing backends that pass the caller's permissions through, and production remote MCP servers (OAuth) inside the Kubikos platform that expose exercise-curation, equipment, and training-plan tools directly to Claude. AI ticket triage with local embeddings and Claude on pseudonymised text. Claude Code multi-repo workflows with role-based subagents, guard hooks and skills; AI docs-as-code pipeline with human review. LLM gateway architecture with deterministic routing (AWS Bedrock, Claude, Gemini multi-provider). AI-powered exercise creation pipeline: auto-generated descriptions, images (Gemini), and videos (Veo3). AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends. Exercise research tool for automated knowledge extraction. RAG-based FAQ automation for clinic support. ML-based PV energy nowcasting. Active Claude Code and Cursor user since 2024. AI tooling champion at GMS — driving adoption across the engineering team.",
     },
     industrial: {
       title: "Industrial Automation",
@@ -269,14 +269,14 @@ export const profile = {
         id: "personal-ai-assistant",
         title: "Building a personal AI assistant",
         summary: "Mail, chats, calendar and tickets in one place, triaged by Claude running headless. Drafts only — nothing goes out without a human. Feature wishes pass a review stage with follow-up questions before becoming tickets; receipts are matched for bookkeeping.",
-        basedOn: ["Inbox Hub (own daily assistant)"],
-        keywords: ["assistant", "inbox", "personal", "claudia", "mail", "triage", "drafts", "alltag"],
+        basedOn: ["Didymus (own daily assistant)"],
+        keywords: ["assistant", "inbox", "personal", "didymus", "digital twin", "mail", "triage", "drafts", "alltag"],
       },
       {
         id: "safe-ai-agents",
         title: "Safe AI agents: approvals & least privilege",
         summary: "Treat every message as untrusted input. AI steps that read foreign content get minimal rights, outputs are validated before use, tokens are split by purpose, every write action waits for human approval. Patterns, failure modes, and how to audit them.",
-        basedOn: ["Inbox Hub", "AI agents for hotel software", "Platform security audit"],
+        basedOn: ["Didymus", "AI agents for hotel software", "Platform security audit"],
         keywords: ["agent", "security", "safe", "approval", "least privilege", "prompt injection", "sicherheit", "freigabe"],
       },
       {
