@@ -15,7 +15,7 @@ export const profile = {
     email: "Thomas.klaushofer@smaspos.com",
     phone: "+43 678 1217902",
     github: "https://github.com/thomasklaush",
-    linkedin: "https://www.linkedin.com/in/thomas-klaushofer-39386793/",
+    linkedin: "https://www.linkedin.com/in/thomas-klaushofer/",
     portfolio: "https://thomasklaush.github.io",
     kubikos: "https://kubikos.net",
     twitter: "https://x.com/ThomasKlaush",
@@ -80,7 +80,7 @@ export const profile = {
       period: "2025–present",
       company: "WebTec",
       role: "Co-owner (shareholder) & Software / AI Development",
-      description: "Shareholder of WebTec. Built the EG Energiemanager app for renewable energy communities (Startup Salzburg FACTORY+ 2025, Energiemaker track) and, since 2026, its wider energy platform: AI ticket triage, spot-price battery scheduling, PV/load forecasting — developed with Claude Code role-based subagents across multiple repositories.",
+      description: "Shareholder of WebTec. Built the EG Energiemanager app for renewable energy communities and, since 2026, its wider energy platform: AI ticket triage, spot-price battery scheduling, PV/load forecasting — developed with Claude Code role-based subagents across multiple repositories.",
       tags: ["Flutter", "AI Ticket Triage", "MCP", "AWS CDK", "Claude Code Subagents", "Energy"],
     },
     {
@@ -137,7 +137,7 @@ export const profile = {
     {
       name: "EG Energiemanager — WebTec",
       type: "WebTec product (Thomas is co-owner)",
-      description: "Mobile app for Austrian Erneuerbare-Energie-Gemeinschaften (EEG), built for WebTec. Real-time display of available community energy, consumption optimisation, and hardware configuration. Features ML-based PV generation nowcasting using Open-Meteo weather data and EEG billing API integration. Available on App Store and Google Play. Startup Salzburg FACTORY+ 2025 (Energiemaker track). Around it, since 2026: a support ticket platform with AI triage (local embeddings for duplicate detection and assignee suggestions, Claude classification on pseudonymised text — suggestions only, with budget alerts) and an MCP endpoint for tickets; a spot-price manager scheduling batteries against day-ahead prices (AWS CDK, Python Lambdas); physics-based PV and load forecasting with backtests; and a simulation lab for the control chain. The multi-repo platform is developed with Claude Code: a central plan, role-based subagents per repo in separate worktrees, a read-only contract guardian, guard hooks and repo-specific skills.",
+      description: "Mobile app for Austrian Erneuerbare-Energie-Gemeinschaften (EEG), built for WebTec. Real-time display of available community energy, consumption optimisation, and hardware configuration. Features ML-based PV generation nowcasting using Open-Meteo weather data and EEG billing API integration. Available on App Store and Google Play. Around it, since 2026: a support ticket platform with AI triage (local embeddings for duplicate detection and assignee suggestions, Claude classification on pseudonymised text — suggestions only, with budget alerts) and an MCP endpoint for tickets; a spot-price manager scheduling batteries against day-ahead prices (AWS CDK, Python Lambdas); physics-based PV and load forecasting with backtests; and a simulation lab for the control chain. The multi-repo platform is developed with Claude Code: a central plan, role-based subagents per repo in separate worktrees, a read-only contract guardian, guard hooks and repo-specific skills.",
       tags: ["Flutter", "Modbus TCP", "PV Systems", "EEG API", "ML Nowcasting", "AI Ticket Triage", "MCP", "AWS CDK", "Claude Code Subagents"],
     },
     {
@@ -230,7 +230,6 @@ export const profile = {
     startupPrograms: [
       "Startup Salzburg SHAPE",
       "Startup Salzburg FACTORY #6 (alumnus)",
-      "Startup Salzburg FACTORY+ 2025 (Energiemaker/WebTec track)",
       "Startup Salzburg Investors Lounge (winner)",
       "Startup World Cup 2025 (participant)",
     ],
@@ -404,7 +403,7 @@ export const profile = {
           },
           {
             requirement: "Startup or high-growth company experience; understanding of early-stage velocity",
-            fit: "Founded and runs Kubikos GmbH since 2021. Startup Salzburg SHAPE, FACTORY, FACTORY+ alumnus. FitTech Club member. Lives the startup life daily.",
+            fit: "Founded and runs Kubikos GmbH since 2021. Startup Salzburg SHAPE and FACTORY alumnus. FitTech Club member. Lives the startup life daily.",
           },
           {
             requirement: "Software engineering or technical founder background (strong builder credibility)",
