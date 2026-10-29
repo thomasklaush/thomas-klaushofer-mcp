@@ -63,6 +63,8 @@ Built by Thomas Klaushofer as a demonstration of MCP server development — and 
 
 **Thomas Klaushofer** — DI, MLBT BSc | AI engineer, speaker & trainer | Founder & CEO at Kubikos GmbH | Salzburg, Austria
 
+The Kubikos MCP server is listed in Anthropic's [Claude Connectors Directory](https://claude.ai/directory/kubikos) (community connector).
+
 - [Portfolio](https://thomasklaush.github.io)
 - [LinkedIn](https://www.linkedin.com/in/thomas-klaushofer-39386793/)
 - [GitHub](https://github.com/thomasklaush)
