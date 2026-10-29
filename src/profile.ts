@@ -21,7 +21,7 @@ export const profile = {
     twitter: "https://x.com/ThomasKlaush",
   },
 
-  summary: `AI engineer, technical founder and trainer based in Salzburg, Austria. Builds AI that does real work — a personal AI assistant that triages mail, chats, calendars and tickets with Claude (drafts only, nothing sent without him), AI agents with human approval gates and least-privilege tools, and production MCP servers that connect Claude to existing systems — and offers talks, workshops and courses on AI at work, AI agents and AI-assisted development (technical trainer since 2013). Founder & CEO of Kubikos GmbH — a patented IoT fitness sensor platform with 99% accuracy (validated with Paris Lodron University Salzburg). German patent holder (DE 112021007607.8). Partnered with Hammer Sport AG; exhibited at FIBO and ISPO Munich. Simultaneously runs Sport Performance Systems e.U. as a freelance consultancy for healthcare IT, hotel management, and energy management software — since mid-2026 with a focus on AI agents, MCP servers, AI documentation pipelines and security. Background in mechatronics and robotics (MSc with distinction, JKU Linz), with a second master's in Legal & Business Aspects in Technology. 15+ years of professional experience spanning semiconductor equipment, industrial automation, embedded systems, mobile apps, cloud architectures, and AI integration. Certified IPMA Project Manager, Strategic & Technical Product Manager.`,
+  summary: `AI engineer, technical founder and trainer based in Salzburg, Austria. Builds AI that does real work — a personal AI assistant that triages mail, chats, calendars and tickets with Claude (drafts only, nothing sent without him), AI agents with human approval gates and least-privilege tools, and production MCP servers that connect Claude to existing systems — and offers talks, workshops and courses on AI at work, AI agents and AI-assisted development (technical trainer since 2013). Founder & CEO of Kubikos GmbH — a patented IoT fitness sensor platform with 99% accuracy (validated with Paris Lodron University Salzburg). German patent holder (DE 112021007607.8). Partnered with Hammer Sport AG; exhibited at FIBO and ISPO Munich. Simultaneously runs Sport Performance Systems e.U. as a freelance consultancy for healthcare IT, hotel management, and energy management software — since mid-2026 with a focus on AI agents, MCP servers, AI documentation pipelines and security. Background in mechatronics and robotics (MSc with distinction, JKU Linz), with a second master's in Legal & Business Aspects in Technology. Professional experience since 2007 (full-time since 2013) spanning semiconductor equipment, industrial automation, embedded systems, mobile apps, cloud architectures, and AI integration. Certified IPMA Project Manager, Strategic & Technical Product Manager.`,
 
   education: [
     {
@@ -70,10 +70,10 @@ export const profile = {
 
   experience: [
     {
-      period: "2021–present",
+      period: "Feb 2021–present",
       company: "Kubikos GmbH",
       role: "Founder & CEO",
-      description: "Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; an AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends; exercise research tool extracting technique, pros/cons, and muscle data to auto-populate the exercise database. Operates a production remote MCP server (OAuth-secured, incl. native MCP clients per RFC 8252) with an admin tool suite that lets an AI agent curate the exercise and equipment catalogue (soft-deletes with retention, re-parenting, bulk re-tagging, backfill worklists), plus training-plan tools — all fully integrated into the platform. The Kubikos MCP server has been listed in Anthropic's Claude Connectors Directory as a community connector since Oct 2026 (https://claude.ai/directory/kubikos). AI-generated private user exercise drafts via Bedrock. Development runs on versioned Claude Code skills (bug triage, Sentry triage, release notes, deploys) with integration tests as a blocking release gate. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
+      description: "Responsible for everything: product, hardware, software, founder-led sales and delivery, analytics, and collecting, structuring and preparing data for AI. Founded and lead all technical and business development of a patented IoT fitness sensor platform. Built end-to-end: custom hardware sensors (PCB design, 3D printing, reflow soldering), nRF52840 C++ firmware with patented sensor fusion algorithm (99% accuracy, validated with Paris Lodron University Salzburg), Flutter mobile app (v177+, App Store & Google Play), TypeScript backend, and FIT CLOUD B2B platform. German patent holder (DE 112021007607.8). AI-powered content pipeline: exercise creator workflow generating descriptions, images (Gemini), and videos (Veo3) automatically; an AWS Bedrock training-plan engine (create/refine/adapt) that replaced the earlier n8n + Mistral backends; exercise research tool extracting technique, pros/cons, and muscle data to auto-populate the exercise database. Operates a production remote MCP server (OAuth-secured, incl. native MCP clients per RFC 8252) with an admin tool suite that lets an AI agent curate the exercise and equipment catalogue (soft-deletes with retention, re-parenting, bulk re-tagging, backfill worklists), plus training-plan tools — all fully integrated into the platform. The Kubikos MCP server has been listed in Anthropic's Claude Connectors Directory as a community connector since Oct 2026 (https://claude.ai/directory/kubikos). AI-generated private user exercise drafts via Bedrock. Development runs on versioned Claude Code skills (bug triage, Sentry triage, release notes, deploys) with integration tests as a blocking release gate. Partnered with Hammer Sport AG (50 sensors sold); piloting with FITINN gym chain; prototyping with Gym80. FFG grant recipient for In Situ Energy Harvesting research. Startup Salzburg FACTORY alumnus, Investors Lounge winner, Startup World Cup 2025 participant. Exhibited at FIBO 2024/25/26 and ISPO Munich 2022.",
       tags: ["Patent Holder", "Firmware", "Flutter", "AWS", "MCP Server", "Claude Connectors Directory", "AWS Bedrock", "IoT", "Gemini", "Veo3", "FFG Funded"],
     },
     {
@@ -84,32 +84,32 @@ export const profile = {
       tags: ["Flutter", "AI Ticket Triage", "MCP", "AWS CDK", "Claude Code Subagents", "Energy"],
     },
     {
-      period: "2018–present",
+      period: "Oct 2021–present",
       company: "Sport Performance Systems e.U.",
-      role: "Owner & Freelance Software Engineer",
-      description: "Independent consultancy. Long-term client GMS-Salzburg: customer success and engineering for Vagus (patient-facing app for rehabilitation clinics, HL7 ADT/SIU interfaces, RAG-based FAQ chatbot, deployed across dozens of DACH facilities). Partial team lead on Unity — a next-generation platform unifying hotel management (Felix), medical clinic management (Topas), and patient applications (Vagus) into a single architecture. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows. Built custom MCP servers (Redmine MCP in Python). AI tooling champion internally — driving adoption of Claude, Cursor, MCP servers, n8n automation, and GitHub Copilot Spaces. Since mid-2026 focused on AI: agents for guest and booking workflows in hotel software (triage agent handing over to specialists, tools filtered by user permissions, every write action waits for human approval, cost limits via an LLM gateway); MCP servers over existing backends that act with the calling user's token; an AI pipeline for the user manual (writer/reviewer prompts, every change as a pull request for human approval); a security and architecture audit of the multi-tenant platform, tracked through to verified fixes; plus HL7 interface work and CI/CD.",
-      tags: ["AI Agents", "Human-in-the-loop", "MCP Servers", "LLM Routing", "Security Audit", "HL7", "AWS Bedrock", "RAG", "Ruby on Rails", "AI Tooling", "Customer Success"],
+      role: "Owner · Customer Success Manager (freelance) for GMS-Salzburg",
+      description: "Independent consultancy since Oct 2021. Client GMS-Salzburg (healthcare and hospitality software); title: Customer Success Manager. Quality assurance of the Vagus patient app (rehabilitation clinics across DACH, HL7 ADT/SIU interfaces, RAG FAQ chatbot); wrote its first automated app tests. On-site rollouts and training, and pre-sales for GMS, supported by a self-built lead research and lead management tool. Team lead on Unity, a platform unifying hotel management, clinic management and patient applications, designed its LLM routing architecture (gateway Lambda, AWS Bedrock, multi-provider evaluation). Since AI became this capable, the focus is AI: agents for hotel software with permission-filtered tools and human approval for every write action (recently live, first customer in production), MCP servers over existing backends that act with the user's own token, automatically maintained user manuals (a manual orphaned for years is now kept current with little effort), analytics, collecting and preparing data for AI, and a security and architecture audit of the multi-tenant platform. The app work continues alongside.",
+      tags: ["AI Agents", "Human-in-the-loop", "MCP Servers", "LLM Routing", "Pre-Sales", "Quality Assurance", "Team Lead", "Security Audit", "HL7", "AWS Bedrock", "RAG", "Ruby on Rails", "AI Tooling", "Analytics", "Customer Success"],
     },
     {
-      period: "2017–2021",
+      period: "Jul 2017–Jan 2021",
       company: "BEKO Engineering & Informatik",
       role: "Head of Competence Center AET",
-      description: "Led three departments: Electrical Engineering, Automation, and Measurement Systems / Hardware Development. Full disciplinary and technical leadership, budget responsibility, and served as licensed managing director (gewerberechtlicher Geschäftsführer) for electrical engineering and mechatronics. Standardisation and quality assurance of projects.",
-      tags: ["Leadership", "Automation", "Budget Management", "Electrical Engineering"],
+      description: "Led the competence center for electrical engineering, automation and measurement systems / hardware development: disciplinary and technical leadership, budget and project responsibility; licensed managing director (gewerberechtlicher Geschäftsführer) for electrical engineering and mechatronics. In projects with industrial partners worked out the specification and the division of work with the team. As a \"flying captain\" also took on projects, e.g. PLC programming of special-purpose machines. Core strength: control algorithms and their implementation. Standardisation and quality assurance of projects.",
+      tags: ["Leadership", "Project Responsibility", "Automation", "PLC", "Control Algorithms", "Budget Management", "Electrical Engineering"],
     },
     {
       period: "2017 (Mar–May)",
       company: "Kormaran",
-      role: "Head of Electrical & Control Engineering",
-      description: "Developed control and regulation systems for an innovative watercraft. Built test rigs, commissioned the full vehicle architecture, and led a team of three engineers.",
-      tags: ["Control Systems", "Vehicle Architecture", "Team Lead"],
+      role: "Head of Electrical & Automation Engineering",
+      description: "Multifunctional sports boat that flies on hydrofoils. Responsible for the complete electrical and automation development of the boat; designed the flight control on the hydrofoils. Built test rigs and commissioned the full vehicle architecture. Led a team of six: three electrical engineers and three automation interns.",
+      tags: ["Control Systems", "Hydrofoil Flight Control", "Automation", "Test Rigs", "Team Lead"],
     },
     {
-      period: "2007–2017",
+      period: "2013–2017 (summers from 2007)",
       company: "Siconnex Customized Solutions",
-      role: "CAD Designer → Project Developer → Product Manager",
-      description: "A decade in semiconductor equipment manufacturing. Progressed from CAD designer and service technician (2007–2013) to project developer with global technical sales responsibility (2013–2016), then product manager (2016–2017). Evaluated new processes, defined equipment specifications, accompanied customer projects worldwide. Requirements management, interface between management/engineering/production/sales. International presentations at semiconductor trade shows and symposia.",
-      tags: ["Semiconductor", "Product Management", "Global Sales", "CAD", "Technical Sales"],
+      role: "Project Developer (Pre-Sales) → Product Manager",
+      description: "Semiconductor wet-processing equipment. Project Development (Nov 2013 – Mar 2016): technical lead for customer projects in Asia, Russia and parts of Europe — specified processes and equipment, including chemical process engineering, and assessed feasibility on Siconnex tools (what is possible, what is not, what has to be developed); structured and prepared the projects, aligned them with the customers and handed them to sales for closing (pre-sales). Explored new processes with customers and research institutes; analysed wet-processing equipment in existing plants for cost savings. Product Manager (Apr 2016 – Jan 2017), BATCHSPRAY line: verified, adapted and negotiated customer specifications, analysed market needs through customer visits and trade fairs, supported sales on key customers and critical projects; interface between management, R&D, production and sales; presentations at semiconductor trade shows and symposia. Before: CAD engineering (Jul–Oct 2013) and summer positions in service and CAD alongside studies (2007–2013).",
+      tags: ["Semiconductor", "Pre-Sales", "Technical Specification", "Chemical Process Engineering", "Product Management", "Customer Projects"],
     },
     {
       period: "2013–present",
@@ -149,7 +149,7 @@ export const profile = {
     {
       name: "Unity — Unified Healthcare & Hospitality Platform",
       type: "Freelance (GMS-Salzburg)",
-      description: "Next-generation platform unifying multiple applications: Felix (hotel management), Topas (medical/clinic management), and Vagus (patient app) into a single architecture. Partial team lead. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows.",
+      description: "Next-generation platform unifying multiple applications: Felix (hotel management), Topas (medical/clinic management), and Vagus (patient app) into a single architecture. Team lead. Responsible for LLM routing architecture (Gateway Lambda, AWS Bedrock, multi-provider evaluation), MCP server development, and AI-powered automation workflows.",
       tags: ["LLM Routing", "AWS Bedrock", "TypeScript", "MCP Servers", "n8n", "Ruby on Rails"],
     },
     {
@@ -194,7 +194,7 @@ export const profile = {
     industrial: {
       title: "Industrial Automation",
       items: ["Simatic S7 TIA Portal", "B&R Automation Studio 4", "Beckhoff TwinCAT 2 & 3"],
-      context: "10 years in semiconductor equipment and industrial automation. Control system design and commissioning.",
+      context: "Semiconductor equipment (Siconnex, full-time 2013–2017) and industrial automation (BEKO 2017–2021, incl. PLC programming of special-purpose machines). Control algorithm design and commissioning, incl. hydrofoil flight control (Kormaran).",
     },
     languages: {
       title: "Programming Languages",
@@ -344,7 +344,7 @@ export const profile = {
         requirementMapping: [
           {
             requirement: "3-4+ years in a technical, customer-facing role or former technical founder",
-            fit: "5+ years as technical founder (Kubikos) AND freelance engineer deploying software at dozens of DACH customer sites. 'Former technical founder' describes Thomas perfectly. Before that: 3.5 years leading engineering teams at BEKO, 10 years at Siconnex with global technical sales.",
+            fit: "5+ years as technical founder (Kubikos) AND freelance engineer deploying software at dozens of DACH customer sites. 'Former technical founder' describes Thomas perfectly. Before that: 3.5 years leading engineering teams at BEKO, and pre-sales project development and product management at Siconnex (full-time 2013–2017).",
           },
           {
             requirement: "Production experience with LLMs, prompt engineering, agent development",

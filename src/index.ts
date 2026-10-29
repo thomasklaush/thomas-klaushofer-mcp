@@ -7,7 +7,7 @@ import { profile } from "./profile.js";
 
 const server = new McpServer({
   name: "thomas-klaushofer-mcp",
-  version: "1.4.0",
+  version: "1.5.0",
 });
 
 // --- Tool: get_career_summary ---
