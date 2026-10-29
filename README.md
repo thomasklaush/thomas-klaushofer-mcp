@@ -66,6 +66,6 @@ Built by Thomas Klaushofer as a demonstration of MCP server development — and 
 The Kubikos MCP server is listed in Anthropic's [Claude Connectors Directory](https://claude.ai/directory/kubikos) (community connector).
 
 - [Portfolio](https://thomasklaush.github.io)
-- [LinkedIn](https://www.linkedin.com/in/thomas-klaushofer-39386793/)
+- [LinkedIn](https://www.linkedin.com/in/thomas-klaushofer/)
 - [GitHub](https://github.com/thomasklaush)
 - [Kubikos](https://kubikos.net)
